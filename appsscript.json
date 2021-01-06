@@ -1,0 +1,40 @@
+{
+  "timeZone": "America/New_York",
+  "webapp": {
+    "access": "MYSELF",
+    "executeAs": "USER_DEPLOYING"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": ["https://www.googleapis.com/auth/script.external_request"],
+  "executionApi": {
+    "access": "ANYONE"
+  },
+  "runtimeVersion": "V8",
+  "dataStudio": {
+    "name": "Covid-19 connector",
+    "company": "Apps Script Ninja",
+    "companyUrl": "http://apps-script.ninja",
+    "logoUrl": "http://apps-script.ninja/images/covid.png",
+    "addonUrl": "http://apps-script.ninja",
+    "supportUrl": "http://apps-script.ninja",
+    "description": "Covid-19 connector imports covid-data from covid19api. It provides information how many cases (Active, Confirmed, Recovered, Deaths) were registered from around 250 locations. Connector is based on a free plan of covid19api which has limitations. Some locations have no data (i.e.Niue). One country: USA has a response which can't be fetched properly based on a free plan.",
+    "shortDescription": "Import covid-19 data into Data Studio from covid19api.com",
+    "privacyPolicyUrl": "http://apps-script.ninja/covid19.html",
+    "termsOfServiceUrl": "http://apps-script.ninja/covid19.html",
+    "authType": ["NONE"],
+    "feeType": ["FREE"],
+    "sources": ["COVID19"],
+    "templates": {
+      "default": "452b3251-aefb-44df-9bf7-4d859a93ad60"
+    }
+  },
+  "urlFetchWhitelist": [
+    "https://api.covid19api.com/"
+  ]
+}
+
+  
+
+  
+
+
